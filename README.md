@@ -28,7 +28,9 @@
 
 ## 📖 Abstract
 
-Large language models hallucinate — producing fluent, confident, factually wrong outputs — with a consistency that persists across generations and scales. Existing taxonomies classify hallucination by output type but do not identify the internal mechanism responsible for any given instance.
+Large language models hallucinate—producing flu ent, confident, factually wrong outputs—with a consistency that persists across generations and scales. Existing taxonomies clas sify hallucination by output type, distinguishing intrinsic from extrinsic failures and faithfulness from factuality divergence. These frameworks are descriptively rigorous but do not identify which internal mechanism produced a given instance. This paper analyses hallucination as a structural consequence of three architectural decisions that together form a compound failure sys tem. Self-attention’s co-occurrence learning substitutes statistical proximity for semantic meaning and produces entity confusion, fact misattribution, and semantic drift. The maximum likelihood estimation training objective optimises next-token probability without factual constraint, rewarding statistically plausible out puts regardless of their truth value. Autoregressive decoding’s permanent left-to-right commitment under exposure bias ensures that a single wrong token cascades forward through the entire output sequence without revision. Dataset pathologies—long-tail deficiencies, training bias, and synthetic pollution—amplify these vulnerabilities but do not independently cause them. We make three contributions. First, we map each mechanism to a specific output category in the Alansari and Luqman taxonomy, locating intrinsic hallucination in self-attention, extrinsic hallucination in MLE, and logical inconsistency in autoregressive decoding. Second, we show that each commonly cited dataset pathology exploits one of these mechanisms rather than originating halluci nation independently. Third, we identify the diagnostic limitation of output-type-only classification and contrast it with inference layer mitigation approaches.
+
+Keywords: Large Language Models, Hallucination, Transformer Architecture, Self-Attention, Maximum Likelihood Estimation, Autoregressive Decoding, Mechanistic Analysis, AI Safety, Self-Attention, FROM ARCHITECTURE TO OUTPUT, FROMARCHITECTURETOOUTPUT, STRUCTURAL ORIGINS, MD REJAUL KORIM SADI, SADI, Sadi et al, REJAUL KORIM, MD REJAUL KORIM, KORIM SADI, LLM, ML, NLP, NATURAL LANGUAGE PROCESSING, GENERATIVE MODEL, DATA SCIENCE, CHATGPT, ARTIFICIAL INTELLIGENCE, RESEARCHGATE, IEEE, SSRN ELSEVIER
 
 This paper analyses hallucination as a **structural consequence of three architectural decisions** that together form a compound failure system:
 
@@ -231,16 +233,14 @@ Each notebook writes its results to a CSV and generates the corresponding figure
 
 ## 📚 Citation
 
-If this work informs your research, please cite (demo-only, paper is on hold):
+If this work informs your research, please cite:
 
 ```bibtex
-@article{sadi2025architecture,
-  title   = {From Architecture to Output: Structural Origins of Hallucination
-             in Large Language Models and the Amplifying Role of Data},
-  author  = {Sadi, Md. Rejaul Korim and Tasin, Toufiqur Rahman and Naeem, Golam Mostofa},
-  journal = {Preprint},
-  year    = {2025},
-  note    = {Dept. of CSE, Metropolitan University, Sylhet, Bangladesh}
+@article{sadi2026architecture,
+  title={From Architecture to Output: Structural Origins of Hallucination in Large Language Models and the Amplifying Role of Data},
+  author={Sadi, Md Rejaul Korim and Tasin, Toufiqur Rahman and Naeem, Golam Mostofa},
+  journal={Available at SSRN 6604798},
+  year={2026}
 }
 ```
 
