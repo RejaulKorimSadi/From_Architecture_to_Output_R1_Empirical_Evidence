@@ -7,7 +7,7 @@
 <p>
   <img src="https://img.shields.io/badge/Paper-R1%20v2.0-2980B9?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Status-Under%20Review-C0392B?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Format-IEEE%20Conference-27AE60?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Format-IEEE%20Journal-27AE60?style=for-the-badge" />
 </p>
 
 <p>
